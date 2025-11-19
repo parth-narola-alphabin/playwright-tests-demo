@@ -36,6 +36,14 @@ test('should-product-successfully-purchased-e2e', async ({ page }) => {
 
   await page.getByTestId('buy-now-button').click()
 
+  //add new add
+
+  await page.getByTestId('checkout-change-address-button').click()
+
+  await page.getByTestId('add-new-address-button').click()
+
+  
+
   //fill payment and add details
 
   await page.getByTestId('checkout-first-name-input').fill(TEST_FIRST_NAME)
