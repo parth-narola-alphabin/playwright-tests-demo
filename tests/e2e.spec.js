@@ -10,7 +10,7 @@ const TEST_ZIPCODE = process.env.TEST_USER_ZIPCODE || "232322";
 const TEST_COUNTRY = process.env.TEST_USER_COUNTRY || "XYZ";
 
 
-test.only('should-product-successfully-purchased-e2e', async ({ page }) => {
+test('should-product-successfully-purchased-e2e', async ({ page }) => {
   await page.goto('https://demo.alphabin.co/');
 
   // Expect a title "to contain" a substring.
