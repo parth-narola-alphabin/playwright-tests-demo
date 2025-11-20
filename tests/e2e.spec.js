@@ -73,5 +73,5 @@ test('should-product-successfully-purchased-e2e', async ({ page }) => {
   await expect(page.getByTestId('order-confirmed-title')).toBeVisible()
   
 
-
 });
+
